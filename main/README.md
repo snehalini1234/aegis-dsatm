@@ -38,17 +38,24 @@ If needed, add environment variables in Vercel dashboard:
 
 ## Local Development
 
-```bash
-# Install dependencies
+Follow these steps to run the project locally from the `main` folder.
+
+Windows PowerShell example:
+
+```powershell
+# 1. Change to project folder
+cd C:\aegis-dsatm\main
+
+# 2. Install dependencies (only the first time)
 npm install
 
-# Run development server
+# 3. Start development server (hot reload)
 npm run dev
 
-# Build for production
+# 4. Build for production
 npm run build
 
-# Start production server
+# 5. Start production server after build
 npm start
 ```
 
@@ -77,7 +84,7 @@ Vercel serverless functions don't support persistent WebSocket connections. For 
 
 1. Add database integration (Supabase, MongoDB)
 2. Implement Socket.io for real-time features
-3. Add frontend components from `src.js`
+3. Add frontend components from `src.js` (migrated into `components/BehaviorCapture.js`)
 4. Set up proper authentication flow
 5. Add analytics dashboard
 
